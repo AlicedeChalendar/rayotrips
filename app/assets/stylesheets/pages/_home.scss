@@ -10,10 +10,21 @@
 .logo {
   color: white;
   font-size: 20px;
-  // font-weight: bold;
   position: absolute;
   left: 20px;
   top: 20px;
+}
+
+.social-icons {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 26px;
+  margin-left: 10px;
 }
 
 .banner {
@@ -53,4 +64,17 @@
   border: 0.3px solid white;
   text-align: center;
   padding: 10px;
+}
+
+.rayo-infos {
+  margin-top: 20px;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.rayo-infos-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
