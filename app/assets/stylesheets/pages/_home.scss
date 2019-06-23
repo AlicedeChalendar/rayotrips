@@ -1,1 +1,36 @@
-// Specific CSS for your home-page
+.landing-background {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), image-url("landing.png");
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  // font-weight: bold;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.banner {
+  color: $light-blue;
+}
+
+.banner h1 {
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.highlighted {
+  color: white;
+}

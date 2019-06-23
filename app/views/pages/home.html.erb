@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="landing-background">
+  <div class="logo">
+    <i class="fas fa-bicycle"></i> RayoTrips <i class="fas fa-bicycle"></i>
+  </div>
+  <div class="container banner">
+    <h1>Des voyages d’exception en itinérance à vélo !</h1>
+    <p>Avec <i class="highlighted">RayoTrips</i>, alliez bien-être et (re)découverte des terroirs français le temps d'un séjour guidé dans nos plus belles régions.</p>
+    <h2 class="pt-4 text-center">Get in touch</h2>
+    <%= simple_form_for(contacts_path) do |f| %>
+      <%= f.input :nom %>
+      <%= f.input :prenom %>
+      <%= f.input :email %>
+      <%= f.input :message %>
+      <div class="text-center">
+        <%= f.submit "Tenez-moi informé !", class: "btn" %>
+      </div>
+  </div>
+</div>
