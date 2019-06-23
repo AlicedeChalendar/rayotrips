@@ -2,7 +2,8 @@
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), image-url("landing.png");
   background-size: cover;
   background-position: center;
-  padding: 250px 0;
+  padding-top: 150px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -20,17 +21,36 @@
 }
 
 .banner h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 40px;
   font-weight: bold;
 }
 
-.banner p {
+.sous-titre {
   font-size: 24px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .highlighted {
   color: white;
+}
+
+.modal-notify .modal-header {
+    border-radius: 3px 3px 0 0;
+}
+.modal-notify .modal-content {
+    border-radius: 3px;
+}
+
+.contact-form {
+  padding: 40px;
+  text-align: center;
+}
+
+.launch-phase {
+  width: 60%;
+  border: 0.3px solid white;
+  text-align: center;
+  padding: 10px;
 }

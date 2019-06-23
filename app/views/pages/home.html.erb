@@ -4,15 +4,36 @@
   </div>
   <div class="container banner">
     <h1>Des voyages d’exception en itinérance à vélo !</h1>
-    <p>Avec <i class="highlighted">RayoTrips</i>, alliez bien-être et (re)découverte des terroirs français le temps d'un séjour guidé dans nos plus belles régions.</p>
-    <h2 class="pt-4 text-center">Get in touch</h2>
-    <%= simple_form_for(contacts_path) do |f| %>
-      <%= f.input :nom %>
-      <%= f.input :prenom %>
-      <%= f.input :email %>
-      <%= f.input :message %>
-      <div class="text-center">
-        <%= f.submit "Tenez-moi informé !", class: "btn" %>
+    <p class="sous-titre">Avec <i class="highlighted">RayoTrips</i>, alliez bien-être et (re)découverte des terroirs français le temps d'un séjour guidé dans nos plus belles régions.</p>
+    <br>
+    <br>
+    <br>
+    <div class="container launch-phase">
+      <p>Nous sommes en phase de lancement. Si vous êtes intéressé par notre projet, laissez-nous votre adresse email et nous vous tiendrons informé dès quil y aura du nouveau !</p>
+      <a href="" class="btn btn-contact" data-toggle="modal" data-target="#modalSubscriptionForm">Tenez-moi informé !</a>
+    </div>
+
+    <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-notify modal-warning" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title white-text w-100 font-weight-bold py-2">Donnez-nous votre email pour être les premiers au courant de nos avancées !</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+          <%= simple_form_for @contact do |f| %>
+            <div class="contact-form">
+              <%= f.input :email %>
+              <%= f.input :nom, required: false %>
+              <%= f.input :prenom, required: false %>
+              <%= f.input :message, required: false, label: "Vous avez un message pour nous ? n'hésitez pas !" %>
+              <%= f.submit "Tenez-moi informé !", class: "btn btn-contact" %>
+            </div>
+          <% end %>
+        </div>
       </div>
+    </div>
   </div>
 </div>
+
